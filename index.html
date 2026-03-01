@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2
+?family=Merriweather+Sans:wght@300;400;700
+&family=Londrina+Solid:wght@100;300;400;900
+&family=Inter:wght@100;300;400;700;900
+&display=swap" rel="stylesheet">
     <title>Pasila Salon</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="logo">PaSa Logo</h1> <!--laitetaan logo-->
+    <header>
+        <h1>Pasila Salon</h1>
         <div class="navigation">
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
@@ -21,14 +27,69 @@
                 <li><a href="ajanvaraus.html">ajan varaus</a></li>
             </ul>
         </div>
-    </div>
-    <p>esimerki painikee on tässä</p>
-    <button>
-        <a href="ajanvaraus.html"> ajanvaraus</a>
-    </button>
-    <footer>
+    </header>
 
+    <section class="hero">
+        <div id="hero">
+            <p>Vastuullista hiustenhoitoa luonnollista kauneutta modernilla otteella.</p>
+
+            <a class="btn" href="ajanvaraus.html"> ajanvaraus</a>
+        </div>
+    </section>
+    <main>
+        <section class="card">
+            <div class="text">
+                <h2>Miksi valita meidät</h2>
+                <p>Ystävälliset ja kokeneet stylistit<br>
+                    Korkealaatuiset ammattilais­tuotteet<br>
+                    Siisti ja viihtyisä salonki<br>
+                    Henkilökohtainen palvelu ja konsultaatio<br>
+                    Helppo ja nopea ajanvaraus verkossa</p>
+            </div>
+            <a href="ajanvaraus.html" class="btn">Varaa aika</a>
+        </section>
+        <section class="card">
+            <div class="text">
+                <h2>Ympäristöystävällinen valinta</h2>
+                <p>Käytämme ympäristöystävällisiä työkaluja ja tuotteita,
+                    jotka vähentävät jätettä ja säästävät luonnonvaroja.</p>
+            </div>
+            <img src="tools.jpg" alt="hairsalon-tools">
+        </section>
+        <section class="team">
+            <h2>Tiimimme</h2>
+
+            <div class="team-member">
+                <h3>nimi nimi – Senior Stylist</h3>
+                <p>Modernit leikkaukset, luonnolliset värjäykset ja rauhallinen työskentelytapa.</p>
+            </div>
+
+            <div class="team-member">
+                <h3>nimi nimi – Color Specialist</h3>
+                <p>Balayage, rohkeat sävyt ja lämmin, energinen palveluasenne.</p>
+            </div>
+
+            <a href="ajanvaraus.html" class="btn">Varaa aika tiimiltä</a>
+        </section>
+        <section>
+            <h2>Sijainti & aukioloajat</h2>
+            <p><strong>Osoite:</strong><br> Main Street 123, Oma Kaupunki</p>
+            <p><strong>Aukioloajat:</strong><br>
+                Ma–Pe: 9.00–18.00<br>
+                La: 10.00–16.00<br>
+                Su: Suljettu
+            </p>
+            <a href="ajanvaraus.html" class="btn">Ajanvaraus</a>
+        </section>
+    </main>
+    <footer>
+        <p>Header Kuva: © 2020 Adam Winger, Unsplash.</p>
     </footer>
+
+
+
+
+
 </body>
 
 </html>
