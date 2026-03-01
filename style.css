@@ -1,76 +1,162 @@
 
 body {
   font-family: "Merriweather Sans", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 h1 {
-    color: black;
-    font-size: 35;
-    background-color: #C29864;
+    color: white;
+    font-size: 40;
+    font-weight: 400;
+    background-color: #402309;
     padding: 0%;
     margin: 0%;
+    
 }
+h2 { font-size: 32px; margin-bottom: 20px; 
+font-weight: 500;}
+
 /*Div*/
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    justify-content: flex-start;
 }
 
 /*Button osa*/
-button{
+
+.btn{
+    font-family: "Inter", sans-serif;
     background-color: #C29864;
     border-color: #402309;
     border-radius: 5px;
     padding: 5px 10px;
-}
-button a{
+    font-weight: 700;
     color: black;
-}
-
-
-
-/*navigaatio osa*/
-ul {
-    list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden;
-    display: flex;
-}
-
-ul li a {
-    display: block;
-    color: white;
-    background-color: #402309;
-    text-align: center;
-    padding: 0.8rem 1.2rem;
-    text-decoration: none;
-}
-.navigation{
-  font-family: "Londrina Solid", cursive;
-  font-weight: 400; 
-}
-
-/*käyttjä ystävällinen*/
-@media (max-width: 1000px) {
-    ul li a {
-        padding: 0.6rem 0.8rem;
-    }
-}
-
-a:link,
-a:visited {
-    padding: 0.9rem 1.5rem;
+    padding: 0.9rem 0.7rem;
     text-decoration: none;
     display: inline-block;
 }
 
-a:hover, .active {
-    background-color: #C29864;
-    color: #402309;
+.btn:hover, .btn:active{
+    background-color: #402309;
+    color:#C29864;
 }
 
 
+/*navigaatio osa*/
+.navigation{
+  font-family: "Londrina Solid", cursive;
+  font-weight: 400; 
+  background-color: #402309;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+.navigation ul li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+}
+.navigation ul li a.active {
+  color: white;
+  background-color: #0f0801;
+}
+.navigation ul li a:hover , .navigation ul li a:active{
+    color: #402309;
+    background-color:#C29864;
+}
+
+/*Hero osa*/
+.hero{
+    background-image: url("Hero.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px 200px;
+}
+#hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#hero p{
+    max-width: 500px;
+}
+
+
+
+/*main osa*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main section {
+  max-width: 800px;     
+  width: 100%;          
+  margin: 0 auto;       
+  text-align: center;
+}
+main section {
+  margin: 40px auto;
+}
+
+p{
+    font-family: "Merriweather Sans";
+    font-size: 26px;
+    font-weight: 300;
+}
+
+img{
+    width: 60%;
+}
+/*Card osa*/
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.card .text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.card .btn{
+    margin-top: 25px;
+    /*isompi painike*/
+    padding: 14px 28px;
+    font-size: 1.5rem;
+   border-radius: 6px;
+}
+.card img{
+    align-items: center;
+}
+
+/*käyttjä ystävällinen*/
+@media (max-width: 768px) {
+    header {
+    flex-direction: column;
+  }
+
+    ul li a {
+        padding: 0.6rem 0.8rem;
+    }
+}
 
